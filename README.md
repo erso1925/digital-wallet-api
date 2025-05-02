@@ -1,4 +1,4 @@
-#  Digital Wallet API – Case Study
+# Digital Wallet API – Case Study
 
 This project implements a **Java Spring Boot** backend API for a digital payment company. It allows users to:
 - Create wallets
@@ -43,66 +43,28 @@ To import the collection into Postman:
 
 ```
 
-## Authentication
-```
+---
+##  Authentication
 | Username     | Password   | Role      |
 |--------------|------------|-----------|
 | employee999  | password   | EMPLOYEE  |
 | customer999  | password   | CUSTOMER  |
 | customer1000 | password2  | CUSTOMER  |
-```
-
-All endpoints require Basic Auth.
+All requests require Basic Auth.
+---
 
 ## API Endpoints + Sample JSONs
-### Create Wallet 
-##### POST customers/wallet?customerId=999
-```
-{
-"walletName": "Main Wallet",
-"currency": "TRY",
-"activeForShopping": true,
-"activeForWithdraw": true
-}
-```
+...
 
-### List Wallets
-##### GET /customers/wallet?customerId=999
-##### GET /customers/wallet?customerId=999&currency=EUR
+## Usage Guide (Happy Path Walkthrough)
 
-### Deposit Money
-##### POST /transactions/deposit
-```
-{
-  "walletId": 999,
-  "amount": 600,
-  "source": "TR1234567890123456",
-  "sourceType": "IBAN"
-}
-```
+A complete walkthrough is available in the [`USAGE.md`](./USAGE.md) file.
 
-### Withdraw Money
-##### POST /transactions/withdraw
-```
-{
-  "walletId": 999,
-  "amount": 100,
-  "destination": "TR1234567890123456",
-  "destinationType": "IBAN"
-}
-```
-
-### Approve or Deny Transaction (employee only)
-##### POST /transactions/approve
-```
-{
-  "transactionId": 2,
-  "newStatus": "APPROVED"
-}
-```
-
-### List Transactions
-##### GET /transactions?walletId=999
+This file includes:
+- Authenticated sample requests
+- Expected responses
+- Transaction flow scenarios
+- Final balance validation
 
 ## Test Instructions
 
