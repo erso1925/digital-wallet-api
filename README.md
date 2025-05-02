@@ -53,9 +53,6 @@ To import the collection into Postman:
 All requests require Basic Auth.
 ---
 
-## API Endpoints + Sample JSONs
-...
-
 ## Usage Guide (Happy Path Walkthrough)
 
 A complete walkthrough is available in the [`USAGE.md`](./USAGE.md) file.
