@@ -38,7 +38,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"walletName\": \"My Wallet\",\r\n  \"currency\": \"EUR\",\r\n  \"activeForShopping\": true,\r\n  \"activeForWithdraw\": true\r\n}\r\n",
+							"raw": "{\r\n  \"walletName\": \"Euro Wallet\",\r\n  \"currency\": \"EUR\",\r\n  \"activeForShopping\": true,\r\n  \"activeForWithdraw\": true\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -152,7 +152,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/customers/wallet?customerId=999&currency=EUR",
+							"raw": "http://localhost:8080/customers/wallet?customerId=999&currency=TRY",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -169,7 +169,7 @@
 								},
 								{
 									"key": "currency",
-									"value": "EUR"
+									"value": "TRY"
 								}
 							]
 						}
@@ -209,7 +209,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"walletId\": 999,\r\n  \"amount\": 600,\r\n  \"source\": \"TR1234567890123456\",\r\n  \"sourceType\": \"IBAN\"\r\n}",
+							"raw": "{\r\n  \"walletId\": 199,\r\n  \"amount\": 600,\r\n  \"source\": \"TR1234567890123456\",\r\n  \"sourceType\": \"IBAN\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -259,7 +259,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"walletId\": 999,\r\n  \"amount\": 100,\r\n  \"destination\": \"TR1234567890123456\",\r\n  \"destinationType\": \"IBAN\"\r\n}\r\n",
+							"raw": "{\r\n  \"walletId\": 199,\r\n  \"amount\": 100,\r\n  \"destination\": \"TR1234567890123456\",\r\n  \"destinationType\": \"IBAN\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -309,7 +309,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"transactionId\": 4,\r\n  \"newStatus\": \"APPROVED\"\r\n}",
+							"raw": "{\r\n  \"transactionId\": 3,\r\n  \"newStatus\": \"APPROVED\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -358,7 +358,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/transactions?walletId=999",
+							"raw": "http://localhost:8080/transactions?walletId=199",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -370,7 +370,7 @@
 							"query": [
 								{
 									"key": "walletId",
-									"value": "999"
+									"value": "199"
 								}
 							]
 						}
