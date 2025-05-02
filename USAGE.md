@@ -126,7 +126,7 @@ Content-Type: application/json
 {
   "walletId": 199,
   "amount": 100,
-  "destination": "TR9876543210000000",
+  "destination": "TR1234567890123456",
   "destinationType": "IBAN"
 }
 ```

@@ -33,6 +33,13 @@ cd digital-wallet-api
 # Or use IntelliJ: Run `DigitalWalletApiApplication.java`
 ```
 
+*Note:* If you encounter errors on first run (e.g. missing dependencies), try:
+```
+./mvnw clean install
+./mvnw spring-boot:run
+
+```
+
 ```
 To import the collection into Postman:
 
